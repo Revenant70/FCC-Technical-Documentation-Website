@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="/Resources/CSS/styles.css" rel="stylesheet" type="text/css">
+    <link href="/Resources/CSS/styles.css" rel="stylesheet" type="text/css">
     <title>Technical Documentation Website</title>
 </head>
 <body>
     <nav id="navbar">
         <header>Html Documentation</header>
         <ul>
-            <a><li>Basics of html</li></a>
-            <a><li>How elements work</li></a>
-            <a><li>Attributes</li></a>
-            <a><li>Structure of html</li></a>
-            <a><li>The head</li></a>
-            <a><li>The body</li></a>
+            <a class="nav-link" href="#basics"><li>Basics of html</li></a>
+            <a class="nav-link" href="#how_elements_work"><li>How elements work</li></a>
+            <a class="nav-link" href="#attributes"><li>Attributes</li></a>
+            <a class="nav-link" href="#structure_of_an_html_document"><li>Structure of html</li></a>
+            <a class="nav-link" href="#the_head"><li>The head</li></a>
+            <a class="nav-link" href="#the_body"><li>The body</li></a>
+            <a class="nav-link" href="#reference"><li>Reference</li></a>
         </ul>
     </nav>
     <main id="main-doc">
-        <div class="main-section">
-            <header id="basics">Basics</header>
+        <div class="main-section" id="basics">
+            <header>Basics</header>
             <p>
-                Html (or hypertext markup language) is a language developed for the World Wide Web to build out the foundation of a website. To build out structure html uses markup in the form of elements to specify basic ideas within the html hierarchy. Such elements look like this: </p>
-            <code>
-                &lt;html&gt;, &lt;head&gt;,  &lt;body&gt;, &lt;header&gt;, &lt;div&gt;
-            </code>
+                Html (or hypertext markup language) is a language developed for the World Wide Web to build out the foundation of a website. To build out structure html uses markup in the form of elements to specify basic ideas within the html hierarchy. Such elements look like this: </p>           
+            <code>&lt;html&gt;</code> <code>&lt;head&gt;</code><code>&lt;body&gt;</code><code>&lt;header&gt;</code><code>&lt;div&gt;</code>
             </p>
             <p>
-                Within html the process of writing these elements out is not constricted by being case-sensitive like with other languages. As an example, the element 
-                <code>  &lt;div&gt; </code> could be written like <code> &lt;Div&gt; </code> or <code> &lt;DIV&gt;</code> and it would mean the same thing regardless of circumstances.
+                Within html the process of writing these elements out is not constricted by case-sensitivity like with other languages. As an example, the element 
+                <code>&lt;div&gt;</code> could be written like <code>&lt;Div&gt;</code> or <code>&lt;DIV&gt;</code> and it would mean the same thing regardless of circumstances.
             </p>
         </div>
         
-        <div class="main-section">
-            <header id="how_elements_work">How elements work</header>
+        <div class="main-section" id="how_elements_work">
+            <header>How elements work</header>
             <p>
-                The basic format of an element begins with an opening statement and ends with a closing statement having the information to display in the middle like this: <code> &lt;p&gt;Some piece of text&lt;p&gt; </code> 
+                Elements can be thought of as the individual snip-bits of code that complete a certain task. It is like how different components are needed to build a house, an example being:
+            </p>
+            <ul>
+                <li>windows</li>
+                <li>concrete</li>
+                <li>insulation</li>
+                <li>Plumbing</li>
+                <li>Electric</li>
+                <li>AC and Heating unit</li>
+                <li>Planning</li>
+            </ul>
+            <p>
+                The basic format of an element begins with an opening statement and ends with a closing statement having the information to display in the middle like this: <code> &lt;p&gt;Some piece of text&lt;p&gt;</code> 
                 The type of tag that is used will depend on the needs of the situation. If there is a need for a picture the <code>&lt;img&gt;</code>
                 tag would be used which would display a photo of the developer's choosing. This type of element does not use any text in order to work but simply a link to where the image is stored: <code>&lt;img src="Users/Name/Documents"&gt;</code>
             </p>
         </div>
 
-        <div class="main-section">
-            <header id="attributes">Attributes</header>
+        <div class="main-section" id="attributes">
+            <header>Attributes</header>
             <p>
                 One of the major advantages of html is that it is incredibly flexible due to its ability to be styled with other languages like css. The way that this is possible is through attributes that connect the styling sheet to the html like class and id. 
                 There are other attributes as well that do different things like src, href, target, and others.  The src attribute for example handles where the element receives information like in the above example: 
@@ -54,8 +65,8 @@
             
         </div>
 
-        <div class="main-section">
-            <header id="structure_of_an_html_document">Structure of an html document</header>
+        <div class="main-section" id="structure_of_an_html_document">
+            <header>Structure of an html document</header>
             <p>
                 Overall, an html document needs a variety of elements and attributes to keep it running. It is akin to how the body operates without certain organs or muscles the body can operate but not as well.
                 The basic structure of an html document firstly needs a signal telling the browser what version of html the website is using and that is where doctype comes in. The most recent one that works well for modern projects is 
@@ -67,24 +78,31 @@
             </p>
         </div>
 
-        <div class="main-section">
-            <header id="the_head">The head</header>
+        <div class="main-section" id="the_head">
+            <header>The head</header>
             <p>
                 The job of the head element is to apply the rules wanted for the file as well as the links for styling. It also holds meta, title, and link elements.
             </p>
             <p>
                 The meta element oversees all data that isn’t associated with the other tags: 
-                <code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;title&gt;</code>
-                The average html document has the tag <code>&lt;meta charset=”utf-8"&gt;</code> ”> which “includes most characters from the vast majority of human written languages.” – MDN
+                <code>&lt;base&gt;</code> <code>&lt;link&gt;</code> <code>&lt;script&gt;</code> <code>&lt;style&gt;</code> <code>&lt;title&gt;</code>
+                The average html document has the tag <code>&lt;meta charset=”utf-8"&gt;</code> which, “includes most characters from the vast majority of human written languages.”
             </p>
             <p>
                 The title element is in charge of the title of the webpage in the web browser.
             </p>
         </div>
 
-        <div class="main-section">
-            <header id="the_body">The body</header>
-            <p>Within the body element confines the rest of the document and everything that is visible to the viewer of the website. This can include videos, images, text, and anything else you would like to have on a webpage.</p>
+        <div class="main-section" id="the_body">
+            <header>The body</header>
+            <p>
+                Within the body element confines the rest of the document and everything that is visible to the viewer of the website. This can include videos, images, text, and anything else you would like to have on a webpage.
+                The body element works the same as any other element <code>&lt;body&gt;rest of document&lt;/body&gt;</code>
+            </p>
+        </div>
+
+        <div class="main-section" id="reference">
+            <p>All of the media provided is based off of the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN</a> website</p>
         </div>
     </main>
 </body>

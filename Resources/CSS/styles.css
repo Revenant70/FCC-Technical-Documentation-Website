@@ -2,8 +2,162 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    padding: 1% 2% 1% 2%;
+
+    background-color: #FFFDFF;
+}
+
+header {
+    font-size: 2.488rem;
+
+    line-height: 1.2;
 }
 
 code {
+    font-size: 12px;
+    margin: 10px;
+    padding: 5px;
     background-color: lightgray;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 5rem;
+}
+
+.main-section {
+    max-width: 45rem;
+    height: auto;
+
+    line-height: 1.75;
+}
+
+
+
+/*Navbar*/
+
+#navbar {
+    min-width: 20%;
+
+    padding: 1%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    position: fixed;
+    inset: 0 80% 0 0;
+
+    background-color: #7f8c83;
+
+    overflow: auto;
+}
+
+.nav-link {
+    margin: 1%;
+}
+
+#navbar header {
+    word-wrap: break-word;
+
+    font-weight: 600;
+
+    color: #FFFDFF;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem 1rem;
+}
+
+#navbar ul li {
+    font-size: 1.728rem;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFDFF;
+}
+
+
+
+
+
+/*Basics*/
+
+
+/*How Elements Work*/
+
+#how_elements_work ul li {
+    margin-left: 20px;
+}
+
+/*Attributes*/
+
+
+/*Structure of an Html Document*/
+
+
+/*The head*/
+
+
+/*The body*/
+
+@media (max-width: 55em) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 8rem;
+        margin-left: 0;
+        padding: 1% 10% 1% 10%;
+    
+        background-color: #FFFDFF;
+    }
+
+    #navbar {
+        min-width: 20%;
+
+        padding: 1%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        position: fixed;
+        inset: 0 0 80% 0;
+
+        background-color: #7f8c83;
+
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem 1rem;
+    }
+
+    #reference {
+        text-align: center;
+    }
+
 }
