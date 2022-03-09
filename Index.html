@@ -11,18 +11,18 @@
     <nav id="navbar">
         <header>Html Documentation</header>
         <ul>
-            <a class="nav-link" href="#basics"><li>Basics of html</li></a>
+            <a class="nav-link" href="#basics_of_html"><li>Basics of html</li></a>
             <a class="nav-link" href="#how_elements_work"><li>How elements work</li></a>
             <a class="nav-link" href="#attributes"><li>Attributes</li></a>
-            <a class="nav-link" href="#structure_of_an_html_document"><li>Structure of html</li></a>
+            <a class="nav-link" href="#structure_of_an_html_document"><li>Structure of an html Document</li></a>
             <a class="nav-link" href="#the_head"><li>The head</li></a>
             <a class="nav-link" href="#the_body"><li>The body</li></a>
-            <a class="nav-link" href="#reference"><li>Reference</li></a>
+            <a href="#reference"><li>Reference</li></a>
         </ul>
     </nav>
     <main id="main-doc">
-        <div class="main-section" id="basics">
-            <header>Basics</header>
+        <section class="main-section" id="basics_of_html">
+            <header>Basics of html</header>
             <p>
                 Html (or hypertext markup language) is a language developed for the World Wide Web to build out the foundation of a website. To build out structure html uses markup in the form of elements to specify basic ideas within the html hierarchy. Such elements look like this: </p>           
             <code>&lt;html&gt;</code> <code>&lt;head&gt;</code><code>&lt;body&gt;</code><code>&lt;header&gt;</code><code>&lt;div&gt;</code>
@@ -31,9 +31,9 @@
                 Within html the process of writing these elements out is not constricted by case-sensitivity like with other languages. As an example, the element 
                 <code>&lt;div&gt;</code> could be written like <code>&lt;Div&gt;</code> or <code>&lt;DIV&gt;</code> and it would mean the same thing regardless of circumstances.
             </p>
-        </div>
-        
-        <div class="main-section" id="how_elements_work">
+        </section>
+
+        <section class="main-section" id="how_elements_work">
             <header>How elements work</header>
             <p>
                 Elements can be thought of as the individual snip-bits of code that complete a certain task. It is like how different components are needed to build a house, an example being:
@@ -52,9 +52,9 @@
                 The type of tag that is used will depend on the needs of the situation. If there is a need for a picture the <code>&lt;img&gt;</code>
                 tag would be used which would display a photo of the developer's choosing. This type of element does not use any text in order to work but simply a link to where the image is stored: <code>&lt;img src="Users/Name/Documents"&gt;</code>
             </p>
-        </div>
+        </section>
 
-        <div class="main-section" id="attributes">
+        <section class="main-section" id="attributes">
             <header>Attributes</header>
             <p>
                 One of the major advantages of html is that it is incredibly flexible due to its ability to be styled with other languages like css. The way that this is possible is through attributes that connect the styling sheet to the html like class and id. 
@@ -63,10 +63,10 @@
                 At the end of the day, attributes can be thought of as the modifiers to existing elements that help them do different tasks.
             </p>
             
-        </div>
+        </section>
 
-        <div class="main-section" id="structure_of_an_html_document">
-            <header>Structure of an html document</header>
+        <section class="main-section" id="structure_of_an_html_document">
+            <header>Structure of an html Document</header>
             <p>
                 Overall, an html document needs a variety of elements and attributes to keep it running. It is akin to how the body operates without certain organs or muscles the body can operate but not as well.
                 The basic structure of an html document firstly needs a signal telling the browser what version of html the website is using and that is where doctype comes in. The most recent one that works well for modern projects is 
@@ -76,9 +76,9 @@
             <p>
                 Next up on the list is the html element which houses every other element within the html document. The html tag carries both the head and body elements which makes up the entirety of the document.
             </p>
-        </div>
+        </section>
 
-        <div class="main-section" id="the_head">
+        <section class="main-section" id="the_head">
             <header>The head</header>
             <p>
                 The job of the head element is to apply the rules wanted for the file as well as the links for styling. It also holds meta, title, and link elements.
@@ -91,19 +91,19 @@
             <p>
                 The title element is in charge of the title of the webpage in the web browser.
             </p>
-        </div>
+        </section>
 
-        <div class="main-section" id="the_body">
+        <section class="main-section" id="the_body">
             <header>The body</header>
             <p>
                 Within the body element confines the rest of the document and everything that is visible to the viewer of the website. This can include videos, images, text, and anything else you would like to have on a webpage.
                 The body element works the same as any other element <code>&lt;body&gt;rest of document&lt;/body&gt;</code>
             </p>
-        </div>
+        </section>
 
-        <div class="main-section" id="reference">
+        <section id="reference">
             <p>All of the media provided is based off of the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">MDN</a> website</p>
-        </div>
+        </section>
     </main>
 </body>
 </html>
